@@ -1,0 +1,164 @@
+// This is the stylesheet for Me Care
+
+
+// Styles Reset
+*
+  margin: 0
+  padding: 0
+
+h2
+  margin: 0
+
+// Assets and Variables
+$slider_img : "../images/mecarehome.jpg"
+$footer_img : "../images/image_106.jpg"
+
+$white      : #ffffff
+$text_white : #ffffff
+
+$green      : #8dc63f
+$purple     : #54075b
+
+
+// Table Of Contents
+//
+// 1. Miscellaneous
+// 2. Main-Nav
+// 3. Main Slider
+// 4. Three-Blocks
+// 5. Footer
+// 6. Page-Slider
+// 7. Page-Content
+// 8. Page-Custom-Behandelingen
+
+
+
+// 1. Miscellaneous
+html
+  margin-top: 0 !important
+
+.no-padding
+  padding: 0 !important
+
+.no-margin
+  margin: 0 !important
+
+.green
+  color: $green
+
+.purple
+  color: $purple
+
+// 2. Main-Nav
+.main-nav
+  background-color: $white
+  .container
+    padding: 10px 0
+
+
+// 3. Main Slider
+.main-slider
+  height: 400px
+  max-height: 400px
+  overflow: hidden
+  background: url($slider_img) center
+  background-size: cover
+  border-bottom: 3px solid $green
+  .container
+    height: 100%
+    display: table
+  .slider-text
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+    color: $text_white
+
+
+// 4. Three-Blocks
+.three-blocks
+  margin: 50px 0
+  .block
+    padding: 0 20px
+  .block-icon
+    img
+      margin: 0 auto
+      display: block
+      padding-bottom: 20px
+  .block-header
+    text-align: center
+    .tag-line
+      border-top: 1px solid $green
+      height: 30px
+      span
+        font-size: 30px
+        position: relative
+        display: inline-block
+        top: -20px
+        background-color: $white
+        padding: 0 10px
+  .block-text
+    margin-top: 10px
+    text-align: justify
+  .label-green
+    background-color: $green
+    a
+      color: $text_white
+
+
+// 5. Footer
+.footer
+  border-top: 3px solid $green
+.footer-img
+  width: 100%
+  height: 300px
+  background: url($footer_img) center
+  background-size: cover
+  display: table
+  .footer-text
+    display: table-cell
+    vertical-align: middle
+    color: $text_white
+
+.footer-links
+  width: 100%
+  height: 50px
+  padding: 10px 0
+  display: table
+  text-align: center
+  small
+    display: table-cell
+    vertical-align: middle
+    a
+      color: $green
+
+
+// 6. Page-Slider
+.page-slider
+  height: 300px
+  max-height: 300px
+  overflow: hidden
+  background: url($slider_img) center
+  background-size: cover
+  border-bottom: 3px solid $green
+  .container
+    height: 100%
+    display: table
+  .slider-text
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+    color: $text_white
+    .headline
+    .subline
+      margin-top: 15px
+
+// 7. Page-Content
+.page-content
+  margin: 50px 0
+
+// 8. Page-Custom-Behandelingen
+.page-custom-behandelingen
+  .row
+    margin-top: 50px
+  .row:first-child
+    margin-top: 0
