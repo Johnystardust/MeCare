@@ -24,6 +24,17 @@ html {
   background-color: #ffffff; }
   .main-nav .container {
     padding: 10px 0; }
+  .main-nav .nav-logo {
+    float: left; }
+  .main-nav .nav-menu {
+    float: right; }
+    .main-nav .nav-menu ul {
+      list-style-type: none; }
+      .main-nav .nav-menu ul li {
+        float: left;
+        margin-left: 10px; }
+      .main-nav .nav-menu ul li:first-child {
+        margin-left: 0px; }
 
 .main-slider {
   height: 400px;
@@ -115,6 +126,8 @@ html {
 
 .page-content {
   margin: 50px 0; }
+  .page-content ul {
+    padding-left: 20px; }
 
 .page-custom-behandelingen .row {
   margin-top: 50px; }
