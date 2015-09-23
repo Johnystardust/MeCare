@@ -15,7 +15,7 @@
                         MEcare brengt mensen 'thuis' in zichzelf en laat energie weer stromen. Vanuit de kernovertuiging dat alle antwoorden in het lichaam zelf liggen opgesloten, het lichaam een enorm
                         zelfgenezend vermogen heeft en dat goede zorg voor anderen begint bij goede zorg voor jezelf. 'Wil je weten wie ik ben en vanuit welke visie en bronnen ik werk? Lees meer.
                     </p>
-                    <span class="label label-green"><a href="page.html">Lees meer</a></span>
+                    <span class="label label-green"><a href="<?php echo get_page_link(46); ?>">Lees meer</a></span>
                 </div>
             </div>
 
@@ -47,7 +47,7 @@
                         Ontzuring en voeding, - Massages (Lichaamstherapeutisch, Shiatsu, Lymfedrainage) , - Bach Bloesem therapie, -Schussler Celzout/mineralen therapie,  - Coaching
                         (Lifecoaching, Paraconsult, Loopbaan coaching)
                     </p>
-                    <span class="label label-green"><a href="page.html">Lees meer</a></span>
+                    <span class="label label-green"><a href="<?php echo get_page_link(5); ?>">Lees meer</a></span>
                 </div>
             </div>
         </div>

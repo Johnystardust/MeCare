@@ -27,7 +27,7 @@ get_header(); ?>
 
                 <div class="col-md-4 block">
                     <div class="block-icon">
-                        <img src="<?php echo wp_get_attachment_url(get_post_meta($post->ID, '_behandeling_icon', true)); ?>" width="45%"/>
+                        <img src="<?php echo wp_get_attachment_url(get_post_meta($post->ID, '_behandeling_icon', true)); ?>" width="35%"/>
                     </div>
                     <div class="block-header">
                         <div class="tag-line">

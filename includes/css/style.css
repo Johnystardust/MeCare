@@ -28,13 +28,19 @@ html {
     float: left; }
   .main-nav .nav-menu {
     float: right; }
+  .main-nav .nav-menu {
+    float: right; }
     .main-nav .nav-menu ul {
       list-style-type: none; }
       .main-nav .nav-menu ul li {
-        float: left;
-        margin-left: 10px; }
-      .main-nav .nav-menu ul li:first-child {
-        margin-left: 0px; }
+        padding: 10px;
+        float: left; }
+      .main-nav .nav-menu ul ul {
+        display: none; }
+  .main-nav .menu-dropdown li {
+    clear: both; }
+  .main-nav .menu-dropdown:hover ul {
+    display: block; }
 
 .main-slider {
   height: 400px;
@@ -133,5 +139,25 @@ html {
   margin-top: 50px; }
 .page-custom-behandelingen .row:first-child {
   margin-top: 0; }
+
+.page-custom-praktijk {
+  margin: 50px 0; }
+
+.page-contact-and-maps {
+  border-top: 3px solid #8dc63f;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important; }
+  .page-contact-and-maps .padding-right {
+    padding-right: 15px;
+    padding-left: 0 !important; }
+  .page-contact-and-maps .padding-left {
+    padding-left: 15px;
+    padding-right: 0 !important; }
+  .page-contact-and-maps .form-group-double {
+    height: 59px; }
+  .page-contact-and-maps .form-double-right {
+    padding-right: 0 !important; }
+  .page-contact-and-maps .form-double-left {
+    padding-left: 0 !important; }
 
 /*# sourceMappingURL=style.css.map */

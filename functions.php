@@ -41,3 +41,5 @@ include_once('theme-files/custom-post-types/praktijk-cpt.php');
 
 // Include the behandelingen custom post type
 include_once('theme-files/custom-post-types/behandelingen-cpt.php');
+
+

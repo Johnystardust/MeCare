@@ -30,7 +30,7 @@ $purple     : #54075b
 // 6. Page-Slider
 // 7. Page-Content
 // 8. Page-Custom-Behandelingen
-
+// 9. Page-Custom-Praktijk
 
 
 // 1. Miscellaneous
@@ -58,13 +58,20 @@ html
     float: left
   .nav-menu
     float: right
+  .nav-menu
+    float: right
     ul
       list-style-type: none
       li
+        padding: 10px
         float: left
-        margin-left: 10px
-      li:first-child
-        margin-left: 0px
+      ul
+        display: none
+  .menu-dropdown
+    li
+      clear: both
+  .menu-dropdown:hover ul
+    display: block
 
 
 // 3. Main Slider
@@ -175,3 +182,25 @@ html
     margin-top: 50px
   .row:first-child
     margin-top: 0
+
+// 9. Page-Custom-Praktijk
+.page-custom-praktijk
+  margin: 50px 0
+
+// 10. Page-Custom-Contact
+.page-contact-and-maps
+  border-top: 3px solid $green
+  padding-top: 50px !important
+  padding-bottom: 50px !important
+  .padding-right
+    padding-right: 15px
+    padding-left: 0 !important
+  .padding-left
+    padding-left: 15px
+    padding-right: 0 !important
+  .form-group-double
+    height: 59px
+  .form-double-right
+    padding-right: 0 !important
+  .form-double-left
+    padding-left: 0 !important
