@@ -23,31 +23,42 @@
 <body>
 	<!-- Nav -->
 	<div class="container-fluid no-padding main-nav">
-		<div class="container">
-			<div class="nav-logo">
-				<a href="<?php echo site_url(); ?>">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/includes/images/mecarenavlogo.png" height="50px"/>
-				</a>
-			</div>
+		<div class="nav-logo">
+			<a href="<?php echo site_url(); ?>">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/includes/images/mecarenavlogo.png" height="50px"/>
+			</a>
+		</div>
 
-			<div class="nav-menu">
-				<ul>
-					<li><a href="<?php echo site_url(); ?>">Home</a></li>
+		<div class="nav-menu">
+			<ul>
+				<li class="menu-item"><div class="table-wrapper"><a href="<?php echo site_url(); ?>">Home</a></div></li>
 
-					<li class="menu-dropdown">
-						<a href="<?php echo get_page_link(46); ?>">De Praktijk</a>
-						<ul>
-							<li><a href="<?php echo get_page_link(45); ?>">Visie</a></li>
-							<li><a href="<?php echo get_page_link(48); ?>">Over mij</a></li>
-							<li><a href="<?php echo get_page_link(49); ?>">Bronnen</a></li>
-						</ul>
-					</li>
+				<li class="menu-item menu-dropdown">
+					<div class="table-wrapper"><a href="<?php echo get_page_link(46); ?>">De Praktijk</a></div>
+					<ul class="dropdown-container">
+						<li><a href="<?php echo get_page_link(45); ?>">Visie</a></li>
+						<li><a href="<?php echo get_page_link(48); ?>">Over mij</a></li>
+						<li><a href="<?php echo get_page_link(49); ?>">Bronnen</a></li>
+					</ul>
+				</li>
 
-					<li><a href="<?php echo get_page_link(43); ?>">Bodycheck</a></li>
-					<li><a href="<?php echo get_page_link(5); ?>">Behandelingen</a></li>
-					<li><a href="<?php echo get_page_link(41); ?>">Tarieven</a></li>
-					<li><a href="<?php echo get_page_link(51); ?>">Contact</a></li>
-				</ul>
-			</div>
+				<li class="menu-item"><div class="table-wrapper"><a href="<?php echo get_page_link(43); ?>">Bodycheck</a></div></li>
+
+				<li class="menu-item menu-dropdown">
+					<div class="table-wrapper"><a href="<?php echo get_page_link(5); ?>">Behandelingen</a></div>
+					<ul class="dropdown-container">
+						<li><a href="<?php echo get_page_link(31); ?>">Bioresonantie</a></li>
+						<li><a href="<?php echo get_page_link(33); ?>">Ontzuring</a></li>
+						<li><a href="<?php echo get_page_link(36); ?>">Massages</a></li>
+						<li><a href="<?php echo get_page_link(37); ?>">Bach Bloesem</a></li>
+						<li><a href="<?php echo get_page_link(38); ?>">Schüssler celzout</a></li>
+						<li><a href="<?php echo get_page_link(39); ?>">Coaching</a></li>
+
+					</ul>
+				</li>
+
+				<li class="menu-item"><div class="table-wrapper"><a href="<?php echo get_page_link(41); ?>">Tarieven</a></div></li>
+				<li class="menu-item"><div class="table-wrapper"><a href="<?php echo get_page_link(51); ?>">Contact</a></div></li>
+			</ul>
 		</div>
 	</div>

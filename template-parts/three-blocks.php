@@ -15,7 +15,7 @@
                         MEcare brengt mensen 'thuis' in zichzelf en laat energie weer stromen. Vanuit de kernovertuiging dat alle antwoorden in het lichaam zelf liggen opgesloten, het lichaam een enorm
                         zelfgenezend vermogen heeft en dat goede zorg voor anderen begint bij goede zorg voor jezelf. 'Wil je weten wie ik ben en vanuit welke visie en bronnen ik werk? Lees meer.
                     </p>
-                    <span class="label label-green"><a href="<?php echo get_page_link(46); ?>">Lees meer</a></span>
+                    <span class="btn btn-green"><a href="<?php echo get_page_link(46); ?>">Lees meer</a></span>
                 </div>
             </div>
 
@@ -31,7 +31,7 @@
                         klachten. Een meting door middel van Bioresonantie geeft aan waar in het lichaam de energie goed stroomt en waar niet. Klachten worden verklaard of voorkomen door
                         tijdig een disbalans te signaleren en te herstellen. Bij een bodycheck hoort een helder behandelplan. Indien gewenst worden analyse en plan vormgegeven in een helder rapport.
                     </p>
-                    <span class="label label-green"><a href="<?php echo get_page_link(43); ?>">Lees meer</a></span>
+                    <span class="btn btn-green"><a href="<?php echo get_page_link(43); ?>">Lees meer</a></span>
                 </div>
             </div>
 
@@ -47,7 +47,7 @@
                         Ontzuring en voeding, - Massages (Lichaamstherapeutisch, Shiatsu, Lymfedrainage) , - Bach Bloesem therapie, -Schussler Celzout/mineralen therapie,  - Coaching
                         (Lifecoaching, Paraconsult, Loopbaan coaching)
                     </p>
-                    <span class="label label-green"><a href="<?php echo get_page_link(5); ?>">Lees meer</a></span>
+                    <span class="btn btn-green"><a href="<?php echo get_page_link(5); ?>">Lees meer</a></span>
                 </div>
             </div>
         </div>
