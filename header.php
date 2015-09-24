@@ -23,14 +23,14 @@
 <body>
 	<!-- Nav -->
 	<div class="container-fluid no-padding main-nav">
-		<div class="nav-logo">
-			<a href="<?php echo site_url(); ?>">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/includes/images/mecarenavlogo.png" height="50px"/>
-			</a>
-		</div>
-
 		<div class="nav-menu">
-			<ul>
+			<li class="toggle-item">
+				<div class="table-wrapper">
+					<a class="toggle-nav" href="#">&#9776;</a>
+				</div>
+			</li>
+
+			<ul class="active">
 				<li class="menu-item"><div class="table-wrapper"><a href="<?php echo site_url(); ?>">Home</a></div></li>
 
 				<li class="menu-item menu-dropdown">
@@ -60,5 +60,11 @@
 				<li class="menu-item"><div class="table-wrapper"><a href="<?php echo get_page_link(41); ?>">Tarieven</a></div></li>
 				<li class="menu-item"><div class="table-wrapper"><a href="<?php echo get_page_link(51); ?>">Contact</a></div></li>
 			</ul>
+		</div>
+
+		<div class="nav-logo">
+			<a href="<?php echo site_url(); ?>">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/includes/images/mecarenavlogo.png" height="50px"/>
+			</a>
 		</div>
 	</div>

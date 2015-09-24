@@ -32,11 +32,18 @@ html {
   background-color: #ffffff; }
   .main-nav .nav-logo {
     padding: 10px 0;
-    float: left;
-    margin-left: 20px; }
-  .main-nav .nav-menu {
     float: right;
     margin-right: 20px; }
+  .main-nav .nav-menu {
+    float: left;
+    margin-left: 20px; }
+    .main-nav .nav-menu .toggle-item {
+      display: none; }
+    .main-nav .nav-menu .toggle-item:hover {
+      background-color: #8dc63f; }
+      .main-nav .nav-menu .toggle-item:hover a {
+        color: #ffffff;
+        text-decoration: none; }
     .main-nav .nav-menu ul {
       height: 70px;
       list-style-type: none;
@@ -216,6 +223,10 @@ html {
 
 .page-custom-praktijk {
   margin: 50px 0; }
+  .page-custom-praktijk .row .col-md-10 ul {
+    padding-left: 20px; }
+  .page-custom-praktijk .row .col-md-10 ol {
+    padding-left: 20px; }
 
 .page-contact-and-maps {
   border-top: 3px solid #8dc63f;
@@ -233,5 +244,49 @@ html {
     padding-right: 0 !important; }
   .page-contact-and-maps .form-double-left {
     padding-left: 0 !important; }
+
+@media screen and (max-width: 992px) {
+  .main-nav {
+    clear: both; }
+
+  .nav-logo {
+    margin-right: 0 !important; }
+
+  .nav-menu {
+    margin-left: 0 !important;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .nav-menu ul.active {
+      display: none; }
+    .nav-menu .toggle-item {
+      display: block !important;
+      padding: 0 20px;
+      height: 70px;
+      min-width: 151px; }
+      .nav-menu .toggle-item a {
+        color: #8dc63f;
+        font-size: 18px; }
+      .nav-menu .toggle-item a:hover {
+        text-decoration: none; }
+      .nav-menu .toggle-item .table-wrapper {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: table; }
+        .nav-menu .toggle-item .table-wrapper a {
+          display: table-cell;
+          vertical-align: middle; }
+    .nav-menu .menu-item {
+      clear: both;
+      width: 100%; }
+      .nav-menu .menu-item .table-wrapper {
+        width: 100%;
+        text-align: center; }
+    .nav-menu .dropdown-container {
+      left: 171px; }
+      .nav-menu .dropdown-container li {
+        border-left: 1px solid #8dc63f; } }
 
 /*# sourceMappingURL=style.css.map */

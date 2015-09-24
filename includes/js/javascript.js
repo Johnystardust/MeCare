@@ -22,4 +22,13 @@ $(document).ready(function(){
         $(this).find('.dropdown-container').find('li').css('width', menuWidth);
     });
 
+    // Toggle the menu
+
+    $('.toggle-item').click(function(e){
+        $(this).toggleClass('active');
+        $('.nav-menu ul').toggleClass('active');
+
+        e.preventDefault();
+    });
+
 });
