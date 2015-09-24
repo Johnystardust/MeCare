@@ -7,7 +7,7 @@ global $post;
 
 get_header(); ?>
 
-<?php include_once('template-parts/page-slider.php'); ?>
+<?php include_once('template-parts/slider/full-page-slider.php'); ?>
 
 <div class="container-fluid no-padding page-custom-praktijk">
     <div class="container">
@@ -19,8 +19,10 @@ get_header(); ?>
         while($the_query->have_posts() ) : $the_query->the_post(); ?>
 
             <div class="row">
-                <h3><?php the_title(); ?></h3><br/>
-                <?php the_content(); ?>
+                <div class="col-md-10 col-md-offset-1">
+                    <h3><?php the_title(); ?></h3><br/>
+                    <?php the_content(); ?>
+                </div>
             </div>
 
         <?php endwhile; wp_reset_postdata(); ?>

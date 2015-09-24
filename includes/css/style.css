@@ -58,6 +58,47 @@ html {
     text-align: center;
     color: #ffffff; }
 
+.page-slider {
+  height: 300px;
+  max-height: 300px;
+  overflow: hidden;
+  background: url("../images/mecarehome.jpg") center;
+  background-size: cover;
+  border-bottom: 3px solid #8dc63f; }
+  .page-slider .container {
+    height: 100%;
+    display: table; }
+  .page-slider .slider-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff; }
+    .page-slider .slider-text .subline {
+      margin-top: 15px; }
+
+.full-page-slider {
+  overflow: hidden;
+  border-bottom: 3px solid #8dc63f; }
+  .full-page-slider .container {
+    height: 100%;
+    display: table; }
+  .full-page-slider .slider-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff; }
+    .full-page-slider .slider-text .headline {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 60px;
+      text-shadow: 2px 2px 8px #000; }
+    .full-page-slider .slider-text .subline {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-size: 46px;
+      text-shadow: 2px 2px 8px #000;
+      margin-top: 15px; }
+
 .three-blocks {
   margin: 50px 0; }
   .three-blocks .block {
@@ -93,12 +134,19 @@ html {
   width: 100%;
   height: 300px;
   background: url("../images/image_106.jpg") center;
-  background-size: cover;
-  display: table; }
+  background-size: cover; }
+  .footer-img .container {
+    display: table;
+    height: 300px; }
   .footer-img .footer-text {
     display: table-cell;
     vertical-align: middle;
     color: #ffffff; }
+    .footer-img .footer-text h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-size: 46px;
+      text-shadow: 2px 2px 8px #000; }
 
 .footer-links {
   width: 100%;
@@ -112,27 +160,11 @@ html {
     .footer-links small a {
       color: #8dc63f; }
 
-.page-slider {
-  height: 300px;
-  max-height: 300px;
-  overflow: hidden;
-  background: url("../images/mecarehome.jpg") center;
-  background-size: cover;
-  border-bottom: 3px solid #8dc63f; }
-  .page-slider .container {
-    height: 100%;
-    display: table; }
-  .page-slider .slider-text {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color: #ffffff; }
-    .page-slider .slider-text .subline {
-      margin-top: 15px; }
-
 .page-content {
   margin: 50px 0; }
   .page-content ul {
+    padding-left: 20px; }
+  .page-content ol {
     padding-left: 20px; }
 
 .page-custom-behandelingen .row {

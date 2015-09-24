@@ -7,7 +7,7 @@ global $post;
 
 get_header(); ?>
 
-<?php include_once('template-parts/page-slider.php'); ?>
+<?php include_once('template-parts/slider/full-page-slider.php'); ?>
 
 <div class="container-fluid no-padding page-custom-behandelingen">
     <div class="container">

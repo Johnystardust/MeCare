@@ -1,15 +1,17 @@
 <?php
 get_header(); ?>
 
-<?php get_template_part('template-parts/page-slider'); ?>
+<?php get_template_part('template-parts/slider/full-page-slider'); ?>
 
     <div class="container-fluid no-padding page-content">
         <div class="container">
-            <?php while ( have_posts() ) : the_post(); ?>
+            <div class="col-md-10 col-md-offset-1">
+                <?php while ( have_posts() ) : the_post(); ?>
 
-                <?php the_content(); ?>
+                    <?php the_content(); ?>
 
-            <?php endwhile; ?>
+                <?php endwhile; ?>
+            </div>
         </div>
     </div>
 

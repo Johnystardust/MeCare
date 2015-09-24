@@ -5,7 +5,7 @@ Template Name: Contact
 
 get_header(); ?>
 
-<?php get_template_part('template-parts/page-slider'); ?>
+<?php get_template_part('template-parts/slider/full-page-slider'); ?>
 
     <div class="container-fluid no-padding page-content">
         <div class="container">

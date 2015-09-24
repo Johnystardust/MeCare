@@ -16,6 +16,8 @@
 	<meta charset="UTF-8">
 	<title>Me Care - <?php if(is_home()){ echo 'Zorg voor je ik'; } else { the_title(); } ?></title>
 
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,700,500' rel='stylesheet' type='text/css'>
+
 	<?php wp_head(); ?>
 </head>
 <body>

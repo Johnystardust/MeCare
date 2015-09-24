@@ -41,10 +41,27 @@ function create_behandelingen_post_type() {
  * Add the functions for the meta_boxes.
  */
 function add_meta_boxes(){
+    add_meta_box('behandeling_quote', 'Quote', 'behandeling_quote_meta_cb', 'behandelingen', 'normal', 'default');
     add_meta_box('behandeling_description', 'Description', 'behandeling_description_meta_cb', 'behandelingen', 'normal', 'default');
     add_meta_box('behandeling_icon', 'Icon', 'behandeling_icon_meta_cb', 'behandelingen', 'normal', 'default');
 }
 
+function behandeling_quote_meta_cb(){
+    global $post;
+    ?>
+
+    <table cellspacing="2" cellpadding="5" style="width: 100%;" class="form-table" >
+        <tbody>
+        <tr class="form-field">
+            <td>
+                <textarea name="_behandeling_quote" id="quote" rows="1" placeholder="write a quote" style="resize: vertical; width: 100%"><?php echo get_post_meta($post->ID, '_behandeling_quote', true); ?></textarea>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+<?php
+}
 
 /**
  * The meta_box callback function for the description.
@@ -168,10 +185,13 @@ function save_behandeling_meta($post_id){
     if($is_autosave || $is_revision || !$is_valid_nonce){
         return;
     }
+    if(isset($_POST[ '_behandeling_quote' ])){
+        update_post_meta($post_id, '_behandeling_quote', $_POST['_behandeling_quote']);
+    }
     if(isset($_POST[ 'upload_behandeling_icon_id' ])){
         update_post_meta($post_id, '_behandeling_icon', $_POST['upload_behandeling_icon_id']);
     }
-    if(isset($_POST['_behandeling_description'])){
+    if(isset($_POST[ '_behandeling_description' ])){
         update_post_meta($post_id, '_behandeling_description', $_POST['_behandeling_description']);
     }
 }

@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<?php get_template_part('template-parts/main-slider'); ?>
+<?php get_template_part('template-parts/slider/home-slider'); ?>
 
 <?php get_template_part('template-parts/three-blocks'); ?>
 

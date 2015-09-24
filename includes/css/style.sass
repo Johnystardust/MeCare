@@ -24,10 +24,9 @@ $purple     : #54075b
 //
 // 1. Miscellaneous
 // 2. Main-Nav
-// 3. Main Slider
+// 3. Sliders
 // 4. Three-Blocks
 // 5. Footer
-// 6. Page-Slider
 // 7. Page-Content
 // 8. Page-Custom-Behandelingen
 // 9. Page-Custom-Praktijk
@@ -73,8 +72,9 @@ html
   .menu-dropdown:hover ul
     display: block
 
+// 3. SLIDERS
 
-// 3. Main Slider
+// 3.1 Main Slider
 .main-slider
   height: 400px
   max-height: 400px
@@ -91,6 +91,48 @@ html
     text-align: center
     color: $text_white
 
+// 3.2 Page-slider
+.page-slider
+  height: 300px
+  max-height: 300px
+  overflow: hidden
+  background: url($slider_img) center
+  background-size: cover
+  border-bottom: 3px solid $green
+  .container
+    height: 100%
+    display: table
+  .slider-text
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+    color: $text_white
+    .headline
+    .subline
+      margin-top: 15px
+
+.full-page-slider
+  overflow: hidden
+  border-bottom: 3px solid $green
+  .container
+    height: 100%
+    display: table
+  .slider-text
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+    color: $text_white
+    .headline
+      font-family: 'Roboto', sans-serif
+      font-weight: 300
+      font-size: 60px
+      text-shadow: 2px 2px 8px #000
+    .subline
+      font-family: 'Roboto', sans-serif
+      font-weight: 100
+      font-size: 46px
+      text-shadow: 2px 2px 8px #000
+      margin-top: 15px
 
 // 4. Three-Blocks
 .three-blocks
@@ -131,11 +173,18 @@ html
   height: 300px
   background: url($footer_img) center
   background-size: cover
-  display: table
+  .container
+    display: table
+    height: 300px
   .footer-text
     display: table-cell
     vertical-align: middle
     color: $text_white
+    h2
+      font-family: 'Roboto', sans-serif
+      font-weight: 100
+      font-size: 46px
+      text-shadow: 2px 2px 8px #000
 
 .footer-links
   width: 100%
@@ -149,31 +198,12 @@ html
     a
       color: $green
 
-
-// 6. Page-Slider
-.page-slider
-  height: 300px
-  max-height: 300px
-  overflow: hidden
-  background: url($slider_img) center
-  background-size: cover
-  border-bottom: 3px solid $green
-  .container
-    height: 100%
-    display: table
-  .slider-text
-    display: table-cell
-    vertical-align: middle
-    text-align: center
-    color: $text_white
-    .headline
-    .subline
-      margin-top: 15px
-
 // 7. Page-Content
 .page-content
   margin: 50px 0
   ul
+    padding-left: 20px
+  ol
     padding-left: 20px
 
 // 8. Page-Custom-Behandelingen
