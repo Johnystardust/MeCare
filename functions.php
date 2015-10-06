@@ -105,11 +105,13 @@ function add_my_custom_styles(){
 	wp_register_style('my_stylesheet', get_stylesheet_directory_uri().'/includes/css/style.css');
 	wp_register_style('my_style_map', get_stylesheet_directory_uri().'/includes/css/style.css.map');
 	wp_register_style('my_bootstrap', get_stylesheet_directory_uri().'/includes/bootstrap/css/bootstrap.min.css');
+	wp_register_style('my_fontello', get_stylesheet_directory_uri().'/includes/fontello/fontello-embedded.css');
 
 	//enqueue
 	wp_enqueue_style('my_stylesheet');
 	wp_enqueue_style('my_style_map');
 	wp_enqueue_style('my_bootstrap');
+	wp_enqueue_style('my_fontello');
 }
 
 // Include the praktijk custom post type
@@ -117,4 +119,7 @@ include_once('theme-files/custom-post-types/praktijk-cpt.php');
 
 // Include the behandelingen custom post type
 include_once('theme-files/custom-post-types/behandelingen-cpt.php');
+
+// Include the behandelingen custom post type
+include_once('theme-files/custom-post-types/beoordelingen-cpt.php');
 

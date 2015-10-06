@@ -11,9 +11,14 @@
                 </div>
                 <div class="block-text">
                     <p>
-                        MEcare helpt mensen als zij fysiek en/of mentaal niet lekker in hun vel zitten, klachten hebben,willen weten wat hen mankeert, zij bewust willen werken aan hun gezondheid.
-                        MEcare brengt mensen 'thuis' in zichzelf en laat energie weer stromen. Vanuit de kernovertuiging dat alle antwoorden in het lichaam zelf liggen opgesloten, het lichaam een enorm
-                        zelfgenezend vermogen heeft en dat goede zorg voor anderen begint bij goede zorg voor jezelf. 'Wil je weten wie ik ben en vanuit welke visie en bronnen ik werk? Lees meer.
+                        <?
+                        $the_query = new WP_Query( 'page_id=46' );
+
+                        while ( $the_query->have_posts() ) : $the_query->the_post();
+                            the_content();
+                        endwhile;
+                        wp_reset_postdata();
+                        ?>
                     </p>
                     <span class="btn btn-green"><a href="<?php echo get_page_link(46); ?>">Lees meer</a></span>
                 </div>
@@ -43,9 +48,14 @@
                 </div>
                 <div class="block-text">
                     <p>
-                        Afhankelijk van wat het lichaam nodig heeft, kan energie hersteld worden met behulp van de volgende behandelingen:  - Bioresonantie therapie, -
-                        Ontzuring en voeding, - Massages (Lichaamstherapeutisch, Shiatsu, Lymfedrainage) , - Bach Bloesem therapie, -Schussler Celzout/mineralen therapie,  - Coaching
-                        (Lifecoaching, Paraconsult, Loopbaan coaching)
+                        <?
+                        $the_query = new WP_Query( 'page_id=5' );
+
+                        while ( $the_query->have_posts() ) : $the_query->the_post();
+                            the_content();
+                        endwhile;
+                        wp_reset_postdata();
+                        ?>
                     </p>
                     <span class="btn btn-green"><a href="<?php echo get_page_link(5); ?>">Lees meer</a></span>
                 </div>

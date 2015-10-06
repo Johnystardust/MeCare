@@ -30,6 +30,8 @@ $purple     : #54075b
 // 7. Page-Content
 // 8. Page-Custom-Behandelingen
 // 9. Page-Custom-Praktijk
+// 10. Page-custom-contact
+// 11. Page-custom-beoordelingen
 
 
 // 1. Miscellaneous
@@ -191,16 +193,20 @@ html
     padding: 0 20px
   .block-icon
     img
+      max-width: 200px
       margin: 0 auto
       display: block
-      padding-bottom: 20px
+      padding-bottom: 30px
   .block-header
     text-align: center
     .tag-line
       border-top: 1px solid $green
       height: 30px
       span
+        font-family: "Roboto", sans-serif
+        font-weight: 100
         font-size: 30px
+        text-transform: uppercase
         position: relative
         display: inline-block
         top: -20px
@@ -290,11 +296,61 @@ html
     padding-left: 0 !important
 
 
+// 11. Page-custom-beoordelingen
+.page-custom-beoordelingen
+  border-bottom: 3px solid $green
+  padding-top: 50px !important
+  padding-bottom: 50px !important
+  .title-stars-row
+    margin-bottom: 10px
+  .title
+    display: table
+    height: 28px
+    h3
+      display: table-cell
+      vertical-align: middle
+  .stars
+    text-align: right
+    i
+      font-size: 20px
+      color: $green
+  .date
+    text-align: right
+
+.page-custom-beoordelingen-form
+  padding-top: 50px !important
+  padding-bottom: 50px !important
+  small
+    font-weight: 100
+
 // 18. Media Responsive max 768px
 @media screen and (max-width: 768px)
+  // Change the font-size off the full-page-slider
+  .headline
+    font-size: 50px !important
+  .subline
+    font-size: 30px !important
+  .footer-text
+    h2
+      font-size: 30px !important
+
+  .page-custom-behandelingen
+    .block-icon
+      img
+        width: 40%
+
 
 // 19. Media Responsive min 768px
 @media screen and (min-width: 768px)
+  // Change the font-size off the full-page-slider
+  .headline
+    font-size: 70px !important
+  .subline
+    font-size: 46px !important
+  .footer-text
+    h2
+      font-size: 46px !important
+
 
 // 20. Media Responsive max 860px
 @media screen and (max-width: 860px)
@@ -304,6 +360,7 @@ html
 
 // 22. Media Responsive max 992px
 @media screen and (max-width: 992px)
+  // Main Navivation
   .main-nav
     clear: both
   .nav-logo
@@ -345,6 +402,26 @@ html
       li
         border-left: 1px solid $green
 
+  // Three blocks
+  .three-blocks
+    .col-md-4
+      margin-top: 50px
+    .col-md-4:first-child
+      margin-top: 0
+
+  // Contact Form
+  .page-contact-and-maps
+    .padding-left
+      padding: 0 !important
+    .padding-right
+      padding: 0 !important
+  .form-group-double
+    height: 133px !important
+    .form-double-left
+      margin-bottom: 15px
+      padding: 0 !important
+    .form-double-right
+      padding: 0 !important
 
 // 23. Media Responsive min 1200px
 @media screen and (min-width: 1200px)

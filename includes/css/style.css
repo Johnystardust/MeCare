@@ -155,16 +155,20 @@ html {
   .three-blocks .block {
     padding: 0 20px; }
   .three-blocks .block-icon img {
+    max-width: 200px;
     margin: 0 auto;
     display: block;
-    padding-bottom: 20px; }
+    padding-bottom: 30px; }
   .three-blocks .block-header {
     text-align: center; }
     .three-blocks .block-header .tag-line {
       border-top: 1px solid #8dc63f;
       height: 30px; }
       .three-blocks .block-header .tag-line span {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
         font-size: 30px;
+        text-transform: uppercase;
         position: relative;
         display: inline-block;
         top: -20px;
@@ -245,6 +249,53 @@ html {
   .page-contact-and-maps .form-double-left {
     padding-left: 0 !important; }
 
+.page-custom-beoordelingen {
+  border-bottom: 3px solid #8dc63f;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important; }
+  .page-custom-beoordelingen .title-stars-row {
+    margin-bottom: 10px; }
+  .page-custom-beoordelingen .title {
+    display: table;
+    height: 28px; }
+    .page-custom-beoordelingen .title h3 {
+      display: table-cell;
+      vertical-align: middle; }
+  .page-custom-beoordelingen .stars {
+    text-align: right; }
+    .page-custom-beoordelingen .stars i {
+      font-size: 20px;
+      color: #8dc63f; }
+  .page-custom-beoordelingen .date {
+    text-align: right; }
+
+.page-custom-beoordelingen-form {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important; }
+  .page-custom-beoordelingen-form small {
+    font-weight: 100; }
+
+@media screen and (max-width: 768px) {
+  .headline {
+    font-size: 50px !important; }
+
+  .subline {
+    font-size: 30px !important; }
+
+  .footer-text h2 {
+    font-size: 30px !important; }
+
+  .page-custom-behandelingen .block-icon img {
+    width: 40%; } }
+@media screen and (min-width: 768px) {
+  .headline {
+    font-size: 70px !important; }
+
+  .subline {
+    font-size: 46px !important; }
+
+  .footer-text h2 {
+    font-size: 46px !important; } }
 @media screen and (max-width: 992px) {
   .main-nav {
     clear: both; }
@@ -287,6 +338,24 @@ html {
     .nav-menu .dropdown-container {
       left: 171px; }
       .nav-menu .dropdown-container li {
-        border-left: 1px solid #8dc63f; } }
+        border-left: 1px solid #8dc63f; }
+
+  .three-blocks .col-md-4 {
+    margin-top: 50px; }
+  .three-blocks .col-md-4:first-child {
+    margin-top: 0; }
+
+  .page-contact-and-maps .padding-left {
+    padding: 0 !important; }
+  .page-contact-and-maps .padding-right {
+    padding: 0 !important; }
+
+  .form-group-double {
+    height: 133px !important; }
+    .form-group-double .form-double-left {
+      margin-bottom: 15px;
+      padding: 0 !important; }
+    .form-group-double .form-double-right {
+      padding: 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */

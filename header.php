@@ -16,6 +16,7 @@
 	<meta charset="UTF-8">
 	<title>Me Care - <?php if(is_home()){ echo 'Zorg voor je ik'; } else { the_title(); } ?></title>
 
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,700,500' rel='stylesheet' type='text/css'>
 
 	<?php wp_head(); ?>
@@ -38,6 +39,7 @@
 					<ul class="dropdown-container">
 						<li><a href="<?php echo get_page_link(45); ?>">Visie</a></li>
 						<li><a href="<?php echo get_page_link(48); ?>">Over mij</a></li>
+						<li><a href="<?php echo get_page_link(83); ?>">Gastenboek</a></li>
 						<li><a href="<?php echo get_page_link(49); ?>">Bronnen</a></li>
 					</ul>
 				</li>
