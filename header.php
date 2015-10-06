@@ -70,3 +70,8 @@
 			</a>
 		</div>
 	</div>
+
+	<!-- Go up -->
+	<a class="go-up text-center">
+		<i class="icon-up-open"></i>
+	</a>

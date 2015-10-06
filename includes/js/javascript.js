@@ -23,12 +23,17 @@ $(document).ready(function(){
     });
 
     // Toggle the menu
-
     $('.toggle-item').click(function(e){
         $(this).toggleClass('active');
         $('.nav-menu ul').toggleClass('active');
 
         e.preventDefault();
     });
+
+    // Function to scroll down from the header/slider
+    $('.go-down').click(function(e){
+        $('html, body').animate({ scrollTop: ($(".page-content").offset().top - 53 ) }, 600);
+        e.preventDefault();
+    })
 
 });

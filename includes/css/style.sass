@@ -57,6 +57,34 @@ html
   a
     text-decoration: none
 
+.go-up
+  color: $white
+  text-decoration: none
+  cursor: pointer
+  i
+    width: 36px
+    height: 36px
+    position: fixed
+    right: 15px
+    bottom: 19px
+    line-height: 36px
+    z-index: 2000
+    font-size: 80%
+    background-color: $green
+    display: block
+    -webkit-border-radius: 2px
+    -moz-border-radius: 2px
+  i:hover
+    background-color: $purple
+    color: $white
+.go-down
+  height: 10%
+  text-align: center
+  i
+    font-size: 18px
+    color: $text_white
+
+
 // 2. Main-Nav
 .main-nav
   background-color: $white
@@ -168,7 +196,10 @@ html
   border-bottom: 3px solid $green
   .container
     height: 100%
+  .slider
     display: table
+    height: 90%
+    margin: 0 auto
   .slider-text
     display: table-cell
     vertical-align: middle
@@ -185,6 +216,7 @@ html
       font-size: 46px
       text-shadow: 2px 2px 8px #000
       margin-top: 15px
+
 
 // 4. Three-Blocks
 .three-blocks

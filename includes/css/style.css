@@ -28,6 +28,34 @@ html {
   .btn-green:hover a {
     text-decoration: none; }
 
+.go-up {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer; }
+  .go-up i {
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    right: 15px;
+    bottom: 19px;
+    line-height: 36px;
+    z-index: 2000;
+    font-size: 80%;
+    background-color: #8dc63f;
+    display: block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px; }
+  .go-up i:hover {
+    background-color: #54075b;
+    color: #ffffff; }
+
+.go-down {
+  height: 10%;
+  text-align: center; }
+  .go-down i {
+    font-size: 18px;
+    color: #ffffff; }
+
 .main-nav {
   background-color: #ffffff; }
   .main-nav .nav-logo {
@@ -131,8 +159,11 @@ html {
   overflow: hidden;
   border-bottom: 3px solid #8dc63f; }
   .full-page-slider .container {
-    height: 100%;
-    display: table; }
+    height: 100%; }
+  .full-page-slider .slider {
+    display: table;
+    height: 90%;
+    margin: 0 auto; }
   .full-page-slider .slider-text {
     display: table-cell;
     vertical-align: middle;

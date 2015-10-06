@@ -1,6 +1,6 @@
 <?php ?>
 <!-- 3 blocks -->
-<div class="container-fluid no-padding three-blocks">
+<div class="container-fluid no-padding three-blocks page-content">
     <div class="container">
         <div class="row">
             <div class="col-md-4 block">

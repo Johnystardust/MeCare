@@ -91,11 +91,13 @@ function add_my_custom_scripts(){
 	wp_register_script('my_jquery' ,get_stylesheet_directory_uri().'/includes/jquery/jquery.1.11.1.min.js', false);
 	wp_register_script('my_bootstrap_js' ,get_stylesheet_directory_uri().'/includes/bootstrap/js/bootstrap.min.js', false);
 	wp_register_script('my_javascript' ,get_stylesheet_directory_uri().'/includes/js/javascript.js', false);
+	wp_register_script('my_scroll' ,get_stylesheet_directory_uri().'/includes/js/scroll.js', false);
 
 	// enqueue
 	wp_enqueue_script('my_jquery');
 	wp_enqueue_script('my_bootstrap_js');
 	wp_enqueue_script('my_javascript');
+	wp_enqueue_script('my_scroll');
 }
 
 // STYLES

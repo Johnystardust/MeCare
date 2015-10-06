@@ -18,9 +18,14 @@ if ( is_singular( 'praktijk' ) ) {
 <!-- Slider -->
 <div class="container-fluid no-padding full-page-slider" style="background: url('<?php echo $image[0]; ?>') center; background-size: cover">
     <div class="container">
-        <div class="slider-text">
-            <h1 class="headline no-margin"><?php the_title(); ?></h1>
-            <h2 class="subline"><?php echo $subline ?></h2>
+        <div class="slider">
+            <div class="slider-text">
+                <h1 class="headline no-margin"><?php the_title(); ?></h1>
+                <h2 class="subline"><?php echo $subline ?></h2>
+            </div>
+        </div>
+        <div class="go-down">
+            <a href="#"><i class="icon-down-open"></i></a>
         </div>
     </div>
 </div>

@@ -45,7 +45,7 @@ if(isset($_POST['submitted']) && isset($_POST['post_nonce_field']) && wp_verify_
 
 <?php include_once('template-parts/slider/full-page-slider.php'); ?>
 
-    <div class="container-fluid no-padding page-custom-beoordelingen">
+    <div class="container-fluid no-padding page-custom-beoordelingen page-content">
         <div class="container">
             <?php
             $i = 0;

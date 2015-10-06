@@ -9,7 +9,7 @@ get_header(); ?>
 
 <?php include_once('template-parts/slider/full-page-slider.php'); ?>
 
-<div class="container-fluid no-padding page-custom-praktijk">
+<div class="container-fluid no-padding page-custom-praktijk page-content">
     <div class="container">
         <?php
         $i = 0;
