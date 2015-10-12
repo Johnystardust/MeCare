@@ -181,35 +181,33 @@ html {
       text-shadow: 2px 2px 8px #000;
       margin-top: 15px; }
 
-.three-blocks {
-  margin: 50px 0; }
-  .three-blocks .block {
-    padding: 0 20px; }
-  .three-blocks .block-icon img {
-    max-width: 200px;
-    margin: 0 auto;
-    display: block;
-    padding-bottom: 30px; }
-  .three-blocks .block-header {
-    text-align: center; }
-    .three-blocks .block-header .tag-line {
-      border-top: 1px solid #8dc63f;
-      height: 30px; }
-      .three-blocks .block-header .tag-line span {
-        font-family: "Roboto", sans-serif;
-        font-weight: 100;
-        font-size: 30px;
-        text-transform: uppercase;
-        position: relative;
-        display: inline-block;
-        top: -20px;
-        background-color: #ffffff;
-        padding: 0 10px; }
-  .three-blocks .block-text {
-    margin-top: 10px;
-    text-align: justify; }
-    .three-blocks .block-text a {
-      color: #ffffff; }
+.three-blocks .block {
+  padding: 0 20px; }
+.three-blocks .block-icon img {
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 30px; }
+.three-blocks .block-header {
+  text-align: center; }
+  .three-blocks .block-header .tag-line {
+    border-top: 1px solid #8dc63f;
+    height: 30px; }
+    .three-blocks .block-header .tag-line span {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-size: 30px;
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+      top: -20px;
+      background-color: #ffffff;
+      padding: 0 10px; }
+.three-blocks .block-text {
+  margin-top: 10px;
+  text-align: justify; }
+  .three-blocks .block-text a {
+    color: #ffffff; }
 
 .footer {
   border-top: 3px solid #8dc63f; }
@@ -282,8 +280,11 @@ html {
 
 .page-custom-beoordelingen {
   border-bottom: 3px solid #8dc63f;
-  padding-top: 50px !important;
   padding-bottom: 50px !important; }
+  .page-custom-beoordelingen .beoordeling-single {
+    margin-top: 50px; }
+  .page-custom-beoordelingen .beoordeling-single:first-child {
+    margin-top: 0; }
   .page-custom-beoordelingen .title-stars-row {
     margin-bottom: 10px; }
   .page-custom-beoordelingen .title {
@@ -297,14 +298,40 @@ html {
     .page-custom-beoordelingen .stars i {
       font-size: 20px;
       color: #8dc63f; }
-  .page-custom-beoordelingen .date {
-    text-align: right; }
+  .page-custom-beoordelingen .beoordeling-info {
+    margin-bottom: 10px; }
+    .page-custom-beoordelingen .beoordeling-info p {
+      font-style: italic;
+      margin: 0; }
 
 .page-custom-beoordelingen-form {
-  padding-top: 50px !important;
   padding-bottom: 50px !important; }
   .page-custom-beoordelingen-form small {
     font-weight: 100; }
+
+.home-custom-beoordelingen {
+  border-top: 3px solid #8dc63f;
+  padding-top: 50px !important; }
+  .home-custom-beoordelingen .title-stars-row {
+    margin-bottom: 10px; }
+  .home-custom-beoordelingen .title {
+    display: table;
+    height: 28px; }
+    .home-custom-beoordelingen .title h3 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      display: table-cell;
+      vertical-align: middle; }
+  .home-custom-beoordelingen .stars {
+    text-align: left; }
+    .home-custom-beoordelingen .stars i {
+      font-size: 20px;
+      color: #8dc63f; }
+  .home-custom-beoordelingen .beoordeling-info {
+    margin-bottom: 10px; }
+    .home-custom-beoordelingen .beoordeling-info p {
+      font-style: italic;
+      margin: 0; }
 
 @media screen and (max-width: 768px) {
   .headline {

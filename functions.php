@@ -125,3 +125,9 @@ include_once('theme-files/custom-post-types/behandelingen-cpt.php');
 // Include the behandelingen custom post type
 include_once('theme-files/custom-post-types/beoordelingen-cpt.php');
 
+// Include the contact form class
+include_once('theme-files/forms/contact-form.php');
+
+// Include the beoordelingen form class
+include_once('theme-files/forms/beoordelingen-form.php');
+

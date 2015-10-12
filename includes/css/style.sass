@@ -32,9 +32,11 @@ $purple     : #54075b
 // 9. Page-Custom-Praktijk
 // 10. Page-custom-contact
 // 11. Page-custom-beoordelingen
+// 12. Home-custom-beoordelingen
 
 
-// 1. Miscellaneous
+
+//----------------------------------------------1. Miscellaneous------------------------------------------------------//
 html
   margin-top: 0 !important
 
@@ -84,8 +86,7 @@ html
     font-size: 18px
     color: $text_white
 
-
-// 2. Main-Nav
+//----------------------------------------------2. Main-Nav-----------------------------------------------------------//
 .main-nav
   background-color: $white
   .nav-logo
@@ -152,8 +153,7 @@ html
       .menu-dropdown:hover .dropdown-container
         display: block
 
-// 3. SLIDERS
-
+//----------------------------------------------3. Sliders------------------------------------------------------------//
 // 3.1 Main Slider
 .main-slider
   height: 400px
@@ -217,10 +217,8 @@ html
       text-shadow: 2px 2px 8px #000
       margin-top: 15px
 
-
-// 4. Three-Blocks
+//----------------------------------------------4. Three-Blocks-------------------------------------------------------//
 .three-blocks
-  margin: 50px 0
   .block
     padding: 0 20px
   .block-icon
@@ -250,8 +248,7 @@ html
     a
       color: $text_white
 
-
-// 5. Footer
+//----------------------------------------------5. Footer-------------------------------------------------------------//
 .footer
   border-top: 3px solid $green
 .footer-img
@@ -284,7 +281,7 @@ html
     a
       color: $green
 
-// 7. Page-Content
+//----------------------------------------------7. Page-Content-------------------------------------------------------//
 .page-content
   margin: 50px 0
   ul
@@ -292,14 +289,14 @@ html
   ol
     padding-left: 20px
 
-// 8. Page-Custom-Behandelingen
+//----------------------------------------------8. Page-Custom-Behandelingen------------------------------------------//
 .page-custom-behandelingen
   .row
     margin-top: 50px
   .row:first-child
     margin-top: 0
 
-// 9. Page-Custom-Praktijk
+//----------------------------------------------9. Page-Custom-Praktijk-----------------------------------------------//
 .page-custom-praktijk
   margin: 50px 0
   .row
@@ -309,7 +306,7 @@ html
       ol
         padding-left: 20px
 
-// 10. Page-Custom-Contact
+//----------------------------------------------10. Page-Custom-Contact-----------------------------------------------//
 .page-contact-and-maps
   border-top: 3px solid $green
   padding-top: 50px !important
@@ -327,12 +324,14 @@ html
   .form-double-left
     padding-left: 0 !important
 
-
-// 11. Page-custom-beoordelingen
+//----------------------------------------------11. Page-custom-beoordelingen-----------------------------------------//
 .page-custom-beoordelingen
   border-bottom: 3px solid $green
-  padding-top: 50px !important
   padding-bottom: 50px !important
+  .beoordeling-single
+    margin-top: 50px
+  .beoordeling-single:first-child
+    margin-top: 0
   .title-stars-row
     margin-bottom: 10px
   .title
@@ -346,14 +345,45 @@ html
     i
       font-size: 20px
       color: $green
-  .date
-    text-align: right
+  .beoordeling-info
+    margin-bottom: 10px
+    p
+      font-style: italic
+      margin: 0
 
 .page-custom-beoordelingen-form
-  padding-top: 50px !important
   padding-bottom: 50px !important
   small
     font-weight: 100
+
+//----------------------------------------------12. Home-custom-beoordelingen-----------------------------------------//
+.home-custom-beoordelingen
+  border-top: 3px solid $green
+  padding-top: 50px !important
+  .title-stars-row
+    margin-bottom: 10px
+  .title
+    display: table
+    height: 28px
+    h3
+      font-family: "Roboto", sans-serif
+      font-weight: 100
+      display: table-cell
+      vertical-align: middle
+  .stars
+    text-align: left
+    i
+      font-size: 20px
+      color: $green
+  .beoordeling-info
+    margin-bottom: 10px
+    p
+      font-style: italic
+      margin: 0
+
+
+
+
 
 // 18. Media Responsive max 768px
 @media screen and (max-width: 768px)
