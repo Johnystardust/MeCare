@@ -52,7 +52,7 @@ function praktijk_quote_meta_cb(){
         <tbody>
         <tr class="form-field">
             <td>
-                <textarea name="_praktijk_quote" id="quote" rows="1" placeholder="write a quote" style="resize: vertical; width: 100%"><?php echo get_post_meta($post->ID, '_praktijk_quote', true); ?></textarea>
+                <input type="text" name="_praktijk_quote" id="top-quote" placeholder="write a quote" value="<?php echo get_post_meta($post->ID, '_praktijk_quote', true); ?>" style="resize: vertical; width: 100%"/>
             </td>
         </tr>
         </tbody>

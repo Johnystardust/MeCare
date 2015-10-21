@@ -27,7 +27,7 @@ get_header(); ?>
                 <script>
                     function initialize() {
                         var mapCanvas = document.getElementById('map-canvas');
-                        var myLatLng = new google.maps.LatLng(51.9794907, 5.9095527,17);
+                        var myLatLng = new google.maps.LatLng(52.575862, 5.761010);
                         var mapOptions = {
                             center: myLatLng,
                             zoom: 14,

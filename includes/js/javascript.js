@@ -34,6 +34,12 @@ $(document).ready(function(){
     $('.go-down').click(function(e){
         $('html, body').animate({ scrollTop: ($(".page-content").offset().top - 53 ) }, 600);
         e.preventDefault();
-    })
+    });
+
+    function go_down_fade(){
+        $('.go-down').animate({ opacity: 0.3}, 900);
+        $('.go-down').delay(900).animate({ opacity: 1}, 900);
+    }
+    setInterval(go_down_fade, 1800);
 
 });

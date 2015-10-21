@@ -38,7 +38,7 @@ get_header(); ?>
                         <p>
                             <?php echo get_post_meta($post->ID, '_behandeling_description', true) ?>
                         </p>
-                        <span class="btn btn-green"><a href="<?php echo the_permalink(); ?>">Lees meer</a></span>
+                        <a href="<?php echo the_permalink(); ?>"><span class="btn btn-green">Lees meer</span></a>
                     </div>
                 </div>
 

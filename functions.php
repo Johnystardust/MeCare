@@ -34,7 +34,7 @@ function tvds_top_quote_page_meta_cb(){
 		<tbody>
 		<tr class="form-field">
 			<td>
-				<textarea name="_top_page_quote" id="top-quote" rows="1" placeholder="write a quote" style="resize: vertical; width: 100%"><?php echo get_post_meta($post->ID, '_top_page_quote', true); ?></textarea>
+				<input type="text" name="_top_page_quote" id="top-quote" placeholder="write a quote" value="<?php echo get_post_meta($post->ID, '_top_page_quote', true); ?>" style="resize: vertical; width: 100%"/>
 			</td>
 		</tr>
 		</tbody>
@@ -50,7 +50,7 @@ function tvds_bottom_quote_page_meta_cb(){
 		<tbody>
 		<tr class="form-field">
 			<td>
-				<textarea name="_bottom_page_quote" id="bottom-quote" rows="1" placeholder="write a quote" style="resize: vertical; width: 100%"><?php echo get_post_meta($post->ID, '_bottom_page_quote', true); ?></textarea>
+				<input type="text" name="_bottom_page_quote" id="bottom-quote" placeholder="write a quote" value="<?php echo get_post_meta($post->ID, '_bottom_page_quote', true); ?>" style="resize: vertical; width: 100%"/>
 			</td>
 		</tr>
 		</tbody>

@@ -1,0 +1,66 @@
+//----------------------------------------------2. Main-Nav-----------------------------------------------------------//
+.main-nav
+  background-color: $white
+  .nav-logo
+    padding: 10px 0
+    float: left
+    margin-left: 20px
+  .nav-menu
+    float: right
+    margin-right: 20px
+    .toggle-item
+      display: none
+    .toggle-item:hover
+      background-color: $green
+      a
+        color: $white
+        text-decoration: none
+    ul
+      height: 70px
+      list-style-type: none
+      margin-bottom: 0 !important
+      .menu-item:hover
+        background-color: $green
+        a
+          color: $white
+          text-decoration: none
+      .menu-item
+        float: left
+        padding: 0 20px
+        height: 70px
+        display: block
+        .table-wrapper
+          display: table
+          height: 100%
+        a
+          display: table-cell
+          vertical-align: middle
+      .menu-dropdown
+        .dropdown-container
+          display: none
+          position: absolute
+          top: 70px
+          li:hover
+            background-color: $green
+            a
+              color: $white
+              text-decoration: none
+          li
+            height: 70px
+            background-color: $white
+            clear: both
+            padding: 0
+            display: table
+            text-align: center
+            position: relative
+            left: -20px
+            a
+              color: $green
+      a
+        color: $green
+        font-family: 'Roboto', sans-serif
+        font-weight: 300
+        font-size: 14px
+        text-transform: uppercase
+      .menu-dropdown:hover .dropdown-container
+        display: block
