@@ -77,6 +77,15 @@ function save_quote_page_meta($post_id){
 }
 add_action('save_post', 'save_quote_page_meta');
 
+/*
+|-----------------------------------------------------------------------------------------------------------------------
+|   Register menu.
+|-----------------------------------------------------------------------------------------------------------------------
+*/
+function tvds_register_menu_init() {
+	register_nav_menu('main-menu',__( 'Hoofdmenu' ));
+}
+add_action( 'init', 'tvds_register_menu_init' );
 
 
 // Enqueue the scripts and styles

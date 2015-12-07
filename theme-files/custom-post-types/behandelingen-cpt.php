@@ -32,7 +32,8 @@ function create_behandelingen_post_type() {
     'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
     'has_archive'           => false,
     'register_meta_box_cb'  => 'add_meta_boxes',
-    'taxonomies'            => array('category')
+    'taxonomies'            => array('category'),
+    'show_in_nav_menus'     => true
     );
     register_post_type( 'behandelingen', $args);
 }

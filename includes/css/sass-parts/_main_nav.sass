@@ -1,6 +1,11 @@
 //----------------------------------------------2. Main-Nav-----------------------------------------------------------//
 .main-nav
   background-color: $white
+  position: fixed
+  border-bottom: 1px solid $green
+  width: 100%
+  z-index: 1000000
+  top: 0
   .nav-logo
     padding: 10px 0
     float: left
@@ -19,6 +24,11 @@
       height: 70px
       list-style-type: none
       margin-bottom: 0 !important
+      .current_page_item
+        background-color: $green
+        a
+          color: $white
+          text-decoration: none
       .menu-item:hover
         background-color: $green
         a
@@ -32,11 +42,12 @@
         .table-wrapper
           display: table
           height: 100%
+          width: 100%
         a
           display: table-cell
           vertical-align: middle
-      .menu-dropdown
-        .dropdown-container
+      .menu-item-has-children
+        .sub-menu
           display: none
           position: absolute
           top: 70px
@@ -59,8 +70,8 @@
       a
         color: $green
         font-family: 'Roboto', sans-serif
-        font-weight: 300
+        //font-weight: 500
         font-size: 14px
         text-transform: uppercase
-      .menu-dropdown:hover .dropdown-container
+      .menu-item-has-children:hover .sub-menu
         display: block

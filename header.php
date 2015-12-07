@@ -31,37 +31,28 @@
 				</div>
 			</li>
 
-			<ul class="active">
-				<li class="menu-item"><div class="table-wrapper"><a href="<?php echo site_url(); ?>">Home</a></div></li>
+			<?php
+			$args = array(
+				'theme_location'  => 'main-menu',
+				'menu'            => '',
+				'container'       => '',
+				'container_class' => '',
+				'container_id'    => '',
+				'menu_class'      => 'menu',
+				'menu_id'         => '',
+				'echo'            => true,
+				'fallback_cb'     => 'wp_page_menu',
+				'before'          => '<div class="table-wrapper">',
+				'after'           => '</div>',
+				'link_before'     => '',
+				'link_after'      => '',
+				'items_wrap'      => '<ul id="%1$s" class="%2$s active">%3$s</ul>',
+				'depth'           => '',
+				'walker'          => ''
+			);
 
-				<li class="menu-item menu-dropdown">
-					<div class="table-wrapper"><a href="<?php echo get_page_link(46); ?>">De Praktijk</a></div>
-					<ul class="dropdown-container">
-						<li><a href="<?php echo get_page_link(45); ?>">Visie</a></li>
-						<li><a href="<?php echo get_page_link(48); ?>">Over mij</a></li>
-						<li><a href="<?php echo get_page_link(83); ?>">Gastenboek</a></li>
-						<li><a href="<?php echo get_page_link(49); ?>">Bronnen</a></li>
-					</ul>
-				</li>
-
-				<li class="menu-item"><div class="table-wrapper"><a href="<?php echo get_page_link(43); ?>">Bodycheck</a></div></li>
-
-				<li class="menu-item menu-dropdown">
-					<div class="table-wrapper"><a href="<?php echo get_page_link(5); ?>">Behandelingen</a></div>
-					<ul class="dropdown-container">
-						<li><a href="<?php echo get_page_link(31); ?>">Bioresonantie</a></li>
-						<li><a href="<?php echo get_page_link(33); ?>">Ontzuring</a></li>
-						<li><a href="<?php echo get_page_link(36); ?>">Massages</a></li>
-						<li><a href="<?php echo get_page_link(37); ?>">Bach Bloesem</a></li>
-						<li><a href="<?php echo get_page_link(38); ?>">Schüssler celzout</a></li>
-						<li><a href="<?php echo get_page_link(39); ?>">Coaching</a></li>
-
-					</ul>
-				</li>
-
-				<li class="menu-item"><div class="table-wrapper"><a href="<?php echo get_page_link(41); ?>">Tarieven</a></div></li>
-				<li class="menu-item"><div class="table-wrapper"><a href="<?php echo get_page_link(51); ?>">Contact</a></div></li>
-			</ul>
+			wp_nav_menu($args);
+			?>
 		</div>
 
 		<div class="nav-logo">
