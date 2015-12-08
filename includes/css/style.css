@@ -5,6 +5,13 @@
 h2 {
   margin: 0; }
 
+.button-row {
+  text-align: center; }
+  .button-row a {
+    color: #ffffff; }
+  .button-row a:hover {
+    color: #ffffff; }
+
 html {
   margin-top: 0 !important; }
 
@@ -126,6 +133,7 @@ html {
       .main-nav .nav-menu ul a {
         color: #8dc63f;
         font-family: "Roboto", sans-serif;
+        font-weight: 700;
         font-size: 14px;
         text-transform: uppercase; }
       .main-nav .nav-menu ul .menu-item-has-children:hover .sub-menu {
@@ -216,8 +224,7 @@ html {
       background-color: #ffffff;
       padding: 0 10px; }
 .three-blocks .block-text {
-  margin-top: 10px;
-  text-align: justify; }
+  margin-top: 10px; }
   .three-blocks .block-text a {
     color: #ffffff; }
 

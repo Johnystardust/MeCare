@@ -61,6 +61,10 @@ get_header(); ?>
                 </div>
             <?php endwhile; wp_reset_postdata(); ?>
         </div>
+
+        <div class="row button-row">
+            <span class="btn btn-green"><a href="<?php echo get_page_link(83); ?>">Bekijk hier alle beoordelingen</a></span>
+        </div>
     </div>
 </div>
 

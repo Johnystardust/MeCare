@@ -32,9 +32,12 @@
                 </div>
                 <div class="block-text">
                     <p>
-                        Een bodycheck is een gezondheidsmeting met behulp van Bioresonantie. Lichaamscellen functioneren optimaal bij voldoende energie (trilling). Blokkades in de energie veroorzaken
-                        klachten. Een meting door middel van Bioresonantie geeft aan waar in het lichaam de energie goed stroomt en waar niet. Klachten worden verklaard of voorkomen door
-                        tijdig een disbalans te signaleren en te herstellen. Bij een bodycheck hoort een helder behandelplan. Indien gewenst worden analyse en plan vormgegeven in een helder rapport.
+                        Wil je weten wat je mankeert of hoe gezond je bent? Een bodycheck is een gezondheidsmeting met
+                        behulp van Bioresonantie. Lichaamscellen functioneren optimaal bij de juiste trillingsfrequentie
+                        en leveren dan voldoende energie. Blokkades in de energie veroorzaken klachten. Een meting geeft
+                        aan waar in het lichaam de energie goed stroomt en waar niet. Klachten worden verklaard of
+                        voorkomen door tijdig een disbalans te signaleren en te herstellen. Bij een bodycheck hoort
+                        een helder behandelplan. Indien gewenst worden analyse en plan vormgegeven in een helder rapport.
                     </p>
                     <span class="btn btn-green"><a href="<?php echo get_page_link(43); ?>">Lees meer</a></span>
                 </div>
