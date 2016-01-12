@@ -22,7 +22,7 @@
 
 			<div class="container">
 				<div class="footer-links">
-					<small>© 2015 Copyright MeCare | Design and Development by <a href="http://www.rigid-webdesign.nl" target="_blank">Rigid-Webdesign</a></small>
+					<small>© 2015 Copyright MeCare | Design and Development by <a href="http://www.media-critics.nl" target="_blank">Media Critics</a></small>
 				</div>
 			</div>
 		</div>

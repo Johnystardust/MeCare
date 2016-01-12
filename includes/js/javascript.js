@@ -6,13 +6,13 @@ $(document).ready(function(){
     var windowHeight = $(window).height();
     var navHeight    = $('.main-nav').height();
 
-    $('.full-page-slider').css('height', (windowHeight - navHeight + 3));
+    $('.full-page-slider').css('height', ((windowHeight * 0.9 ) - navHeight + 3));
 
     // The resize function
     $(window).resize(function(){
         windowHeight = $(window).height();
 
-        $('.full-page-slider').css('height', (windowHeight - navHeight + 3));
+        $('.full-page-slider').css('height', ((windowHeight * 0.9 ) - navHeight + 3));
     });
 
     // Function to set the propper width to the sub-menu items
@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     // Function to scroll down from the header/slider
     $('.go-down').click(function(e){
-        $('html, body').animate({ scrollTop: ($(".page-content").offset().top - 53 ) }, 600);
+        $('html, body').animate({ scrollTop: ($(".page-content").offset().top - 103) }, 600);
         e.preventDefault();
     });
 

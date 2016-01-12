@@ -140,3 +140,5 @@ include_once('theme-files/forms/contact-form.php');
 // Include the beoordelingen form class
 include_once('theme-files/forms/beoordelingen-form.php');
 
+update_option('siteurl','http://www.mecare.nl');
+update_option('home','http://www.mecare.nl');
