@@ -95,7 +95,7 @@ global $post;
 
                         <div class="row">
                             <div class="col-md-12 beoordeling-info">
-                                <p>Geplaatst op: <?php echo get_the_date(); ?></p>
+<!--                                <p>Geplaatst op: --><?php //echo get_the_date(); ?><!--</p>-->
                                 <p>Geplaatst door: <?php echo get_post_meta($post->ID, '_beoordeling_name', true); ?></p>
                             </div>
                         </div>
